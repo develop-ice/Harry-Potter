@@ -1,0 +1,58 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+        maven {
+            url 'http://nexus.prod.uci.cu/repository/maven-all/'
+            allowInsecureProtocol = true
+        }
+        maven {
+            url 'http://nexus.prod.uci.cu/repository/maven-central/'
+            allowInsecureProtocol = true
+        }
+        maven {
+            url 'http://nexus.prod.uci.cu/repository/jcenter/'
+            allowInsecureProtocol = true
+        }
+        maven {
+            url 'http://nexus.prod.uci.cu/repository/maven-public/'
+            allowInsecureProtocol = true
+        }
+        maven {
+            url 'http://nexus.prod.uci.cu/repository/maven.google.com/'
+            allowInsecureProtocol = true
+        }
+        mavenLocal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven {
+            url 'http://nexus.prod.uci.cu/repository/maven-all/'
+            allowInsecureProtocol = true
+        }
+        maven {
+            url 'http://nexus.prod.uci.cu/repository/maven-central/'
+            allowInsecureProtocol = true
+        }
+        maven {
+            url 'http://nexus.prod.uci.cu/repository/jcenter/'
+            allowInsecureProtocol = true
+        }
+        maven {
+            url 'http://nexus.prod.uci.cu/repository/maven-public/'
+            allowInsecureProtocol = true
+        }
+        maven {
+            url 'http://nexus.prod.uci.cu/repository/maven.google.com/'
+            allowInsecureProtocol = true
+        }
+        mavenLocal()
+    }
+}
+rootProject.name = "My Application"
+include ':app'
